@@ -1,0 +1,11 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "the-portal-gun:item/portal_gun",
+    "tints": [
+      {
+        "type": "the-portal-gun:rainbow"
+      }
+    ]
+  }
+}

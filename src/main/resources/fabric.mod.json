@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "the-portal-gun",
+	"version": "${version}",
+	"name": "The Portal Gun",
+	"description": "A portal gun. Shoot two linked portals onto any surface and walk between them \u2014 built on Planeshift's portal planes.",
+	"authors": [
+		"Niels"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/the-portal-gun/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"codx.ThePortalGun"
+		],
+		"client": [
+			"codx.client.ThePortalGunClient"
+		]
+	},
+	"mixins": [
+		"the-portal-gun.mixins.json",
+		{
+			"config": "the-portal-gun.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"planeshift": "*"
+	}
+}
